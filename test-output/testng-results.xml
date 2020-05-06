@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="32781" started-at="2020-05-06T05:20:55Z" finished-at="2020-05-06T05:21:28Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.capgemini.snapdeal.runner.SecurePaymentRunner@60c6f5b]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="32781" started-at="2020-05-06T05:20:55Z" finished-at="2020-05-06T05:21:28Z">
+      <class name="com.capgemini.snapdeal.runner.SecurePaymentRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.capgemini.snapdeal.runner.SecurePaymentRunner@60c6f5b]" name="setUpClass" is-config="true" duration-ms="476" started-at="2020-05-06T05:20:55Z" finished-at="2020-05-06T05:20:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.capgemini.snapdeal.runner.SecurePaymentRunner@60c6f5b]" name="feature" duration-ms="32126" started-at="2020-05-06T05:20:56Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-06T05:21:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Snapdeal SecurePayment Page]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.capgemini.snapdeal.runner.SecurePaymentRunner@60c6f5b]" name="tearDownClass" is-config="true" duration-ms="33" started-at="2020-05-06T05:21:28Z" finished-at="2020-05-06T05:21:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.capgemini.snapdeal.runner.SecurePaymentRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
