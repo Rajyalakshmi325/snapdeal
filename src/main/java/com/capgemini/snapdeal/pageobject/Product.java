@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.capgemini.snapdeal.Base.Base;
 
-public class Product extends Base{
+public class Product {
 	
 	@FindBy(xpath = "//img[@class='product-image ']")
 	private WebElement facemask;

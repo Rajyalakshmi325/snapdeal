@@ -29,14 +29,14 @@ public class SecurePaymentStepDef  extends Base{
 	    a.getSingin(driver);
 	    a.getLogin();  
 	}
-	@Test
-	@When("^User enters user credentials$")
-	public void user_enters_user_credentials(DataTable credentials) throws Throwable {
-		List<List<String>> ele = credentials.raw();
+@Test
+@When("^User enters valid login credentials$")
+public void user_enters_valid_login_credentials(DataTable arg1) throws Throwable {
+		List<List<String>> ele =arg1.raw();
 		a.getUser(driver);
-	     a.getUserName().sendKeys(ele.get(0).get(0));
-	     a.clickContin();
-	     a.getPass();
+	     a.getName().sendKeys(ele.get(0).get(0));
+	     a.clickContinue();
+	     a.getPassword();
 		a.getPwd().sendKeys(ele.get(0).get(1));
 		a.getSubmit();
 	}
@@ -44,12 +44,12 @@ public class SecurePaymentStepDef  extends Base{
 	@Then("^user name is the page$")
 	public void user_name_is_the_page() throws InterruptedException {
 		a.getWindoe(driver);
-		a.getName1();
-	   
+		a.getSleep();
 	}
 	@Test
 	@Then("^Click on the Snapdeal SecurePayment$")
-	public void click_on_the_Snapdeal_SecurePayment() throws Throwable{
+	public void click_on_the_Snapdeal_SecurePayment() throws InterruptedException {
+		Thread.sleep(1000);
 		s=new SecurePaymentPage(driver);
 	   s.securepayement();
 	}

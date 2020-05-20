@@ -7,10 +7,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.capgemini.snapdeal.Base.Base;
 
-public class LoginPage extends Base{
+public class LoginPage{
+	
+	WebDriver driver;
 	@FindBy(xpath="//span[@class='accountUserName col-xs-12 reset-padding']")
 	private WebElement signin;
 	
@@ -18,10 +21,10 @@ public class LoginPage extends Base{
 	private WebElement login;
 	
 	@FindBy(xpath="//input[@id='userName']")
-	private WebElement username;
+	private WebElement name;
 	
 	@FindBy(id="checkUser")
-	private WebElement continu;
+	private WebElement continues;
 	
 	@FindBy(id="j_password_login_uc")
 	private WebElement pwd;
@@ -31,45 +34,33 @@ public class LoginPage extends Base{
 		
 	public LoginPage(WebDriver driver1) {
 		PageFactory.initElements(driver1, this);
-		driver1.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
+		driver1.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
 	public void getSingin(WebDriver driver1) throws InterruptedException {
 		PageFactory.initElements(driver1, this);
 		Actions action=new Actions(driver1);
 	    Thread.sleep(1000);
-	    action.moveToElement(signin).perform();
-		
+	    action.moveToElement(signin).perform();	
 	}
 	
 	public void getLogin() {
-		
 		login.click();
-		
 	}
 	public void getUser(WebDriver driver1) {
 		PageFactory.initElements(driver1, this);
 		driver1.switchTo().frame(0);
-		username.click();
+		name.click();
 	}
 	
-	public WebElement getUserName() {
-		return username;
+	public WebElement getName(){
+		return name;
 	}
-	
-	
-	public void clickContin() {
-		continu.click();
+	public void clickContinue() {
+		continues.click();
 	}
-	public void getPass() {
+	public void getPassword() {
 		pwd.click();
-	}
-	public void getWindoe(WebDriver driver1) {
-		
-		PageFactory.initElements(driver1, this);
-		String s1 = driver1.getWindowHandle();
-		driver1.switchTo().window(s1);
-		
 	}
 	
 	public WebElement getPwd() {
@@ -79,8 +70,17 @@ public class LoginPage extends Base{
 	public void getSubmit() {
 		submit.click();
 	}
-	public void getName1() throws InterruptedException {
-		Thread.sleep(3000);
-		
+	public void getSleep() throws InterruptedException {
+		Thread.sleep(3000);	
 	}
+	public void getWindoe(WebDriver driver1) {
+		PageFactory.initElements(driver1, this);
+		String s1 = driver1.getWindowHandle();
+		driver1.switchTo().window(s1);
+	}
+
+//	public String getTitle() throws Exception {
+//		Thread.sleep(3000);
+//		return driver.getTitle();
+//	}
 }

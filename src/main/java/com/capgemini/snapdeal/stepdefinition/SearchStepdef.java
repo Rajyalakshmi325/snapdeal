@@ -3,7 +3,9 @@ package com.capgemini.snapdeal.stepdefinition;
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import com.capgemini.snapdeal.Base.Base;
 import com.capgemini.snapdeal.pageobject.LoginPage;
@@ -11,6 +13,8 @@ import com.capgemini.snapdeal.pageobject.Product;
 import com.capgemini.snapdeal.pageobject.Search;
 
 import cucumber.api.DataTable;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -18,54 +22,52 @@ import cucumber.api.java.en.When;
 public class SearchStepdef extends Base {
 
 	WebDriver driver=new ChromeDriver();
-	LoginPage a=new LoginPage(driver);
-	Search s;
+	LoginPage ap=new LoginPage(driver);
+	Search 	s=new Search(driver);
 	Product p;
-	
+	@Test
 	@Given("^User enters website link$")
 	public void user_enters_web_site_link() throws Throwable {
 		driver.manage().window().maximize();
 	    driver.get("http://www.snapdeal.com");
-	    a.getSingin(driver);
-	    a.getLogin();
+	    ap.getSingin(driver);
+	    ap.getLogin();
 	}
-
-	@When("^User enters credentials$")
-	public void user_enters_credentials(DataTable credentials) throws Throwable {
-		List<List<String>> ele = credentials.raw();
-		a.getUser(driver);
-	     a.getUserName().sendKeys(ele.get(0).get(0));
-	     a.clickContin();
-	     a.getPass();
-		a.getPwd().sendKeys(ele.get(0).get(1));
-		a.getSubmit();
-	    
+     @Test
+     @When("^Enter the username and Password$")
+     public void enter_the_username_and_Password(DataTable arg1) throws Throwable {
+		List<List<String>> ele = arg1.raw();
+		ap.getUser(driver);
+	    ap.getName().sendKeys(ele.get(0).get(0));
+	    ap.clickContinue();
+	    ap.getPassword();
+		ap.getPwd().sendKeys(ele.get(0).get(1));
+		ap.getSubmit();  
 	}
-
+    @Test
 	@Then("^user name can be seen on the page$")
-	public void user_name_can_be_seen_on_the_page() throws Throwable {
-		a.getWindoe(driver);
-		a.getName1();	   
+	public void user_name_can_be_seen_on_the_page() throws Throwable {  
+    	ap.getWindoe(driver);
+      	ap.getSleep();
 	}
-
+    @Test
 	@Then("^user search for \"([^\"]*)\"$")
 	public void user_searches_for(String search) throws Throwable {
-		s=new Search(driver);
-		s.getsearch();
-		s.getSearch().sendKeys(search);   
+		s.getsearch1();
+		s.getSearch().sendKeys(search);
 	}
-
+    @Test(dependsOnMethods="user_searches_for(String search)")
 	@Then("^user select the face mask$")
 	public void user_select_the_face_mask() throws Throwable{
 	    s.onClick();
 	}
-
+    @Test
 	@Then("^user clicks on product$")
 	public void user_clicks_on_product() throws Throwable {
 		p=new Product(driver);
 		p.getmask();	    
 	}
-	
+	@Test
 	@Then("^close the browser$")
 	public void close_the_browser() throws Throwable {
 	    driver.quit();

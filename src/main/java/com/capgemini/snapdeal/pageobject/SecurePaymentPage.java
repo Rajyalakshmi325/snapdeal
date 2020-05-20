@@ -3,23 +3,21 @@ package com.capgemini.snapdeal.pageobject;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
+
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.capgemini.snapdeal.Base.Base;
 
-public class SecurePaymentPage extends Base {
-//	@FindBy(xpath="//p[text()='100% Secure Payments']")
-  //   @FindBy(xpath="//i[@class='paymentIcon footerIconsImg']")
-//	private WebElement payment1;
-	@FindBy(xpath="(//div[@class='sdIconContainer'])[1]")
-//	@FindBy(class=paymentIcon footerIconsImg)
+public class SecurePaymentPage {
+
+	@FindBy(xpath="(//div[@class=\"col-xs-6 individualTupple\"])[1]")
 	private WebElement payment;
 	
+	//(//div[@class=\"col-xs-6 individualTupple\"])[1]")
 	
 	public SecurePaymentPage(WebDriver driver1) {
 		driver1.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -32,7 +30,7 @@ public class SecurePaymentPage extends Base {
 	}
 	
 	public void securepayement() throws InterruptedException {
-		Thread.sleep(20);
+		Thread.sleep(1000);
 		payment.click();	
 	}	
 	}

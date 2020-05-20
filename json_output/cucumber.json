@@ -1,0 +1,302 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11630851200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Opens chrome Browser",
+            "match": {
+              "location": "AAddtoCart.user_Opens_chrome_Browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6660414900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters the url",
+            "match": {
+              "location": "AAddtoCart.user_enters_the_url()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1412356000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User mouse hover Account",
+            "match": {
+              "location": "AAddtoCart.user_mouse_hover_Account()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1051454800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the User clicks on Sigin Button",
+            "match": {
+              "location": "AAddtoCart.the_User_clicks_on_Sigin_Button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1700862300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Enter the Enter userName and j_password_login_uc",
+            "match": {
+              "location": "AAddtoCart.enter_the_Enter_userName_and_j_password_login_uc(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "rajyalakshmi325@gmail.com",
+                  "Raji@26"
+                ],
+                "line": 11
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 310360600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Login to application",
+            "match": {
+              "location": "AAddtoCart.login_to_application()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "",
+        "description": "",
+        "id": "add-to-cart;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6345522400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "MOve to the categories",
+            "match": {
+              "location": "AAddtoCart.move_to_the_categories()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1002497700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user SElect The Product",
+            "match": {
+              "location": "AAddtoCart.user_SElect_The_Product()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1890114200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user CLicks On Product",
+            "match": {
+              "location": "AAddtoCart.user_CLicks_On_Product()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7667148700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user wants to ADD the product to cart",
+            "match": {
+              "location": "AAddtoCart.user_wants_to_ADD_the_product_to_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 919745200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "close THe BRowser",
+            "match": {
+              "location": "AAddtoCart.close_THe_BRowser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@First"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9796351600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Opens chrome Browser",
+            "match": {
+              "location": "AAddtoCart.user_Opens_chrome_Browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6335569500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters the url",
+            "match": {
+              "location": "AAddtoCart.user_enters_the_url()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1678646100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User mouse hover Account",
+            "match": {
+              "location": "AAddtoCart.user_mouse_hover_Account()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 513541000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the User clicks on Sigin Button",
+            "match": {
+              "location": "AAddtoCart.the_User_clicks_on_Sigin_Button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1754134900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Enter the Enter userName and j_password_login_uc",
+            "match": {
+              "location": "AAddtoCart.enter_the_Enter_userName_and_j_password_login_uc(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "rajyalakshmi325@gmail.com",
+                  "Raji@26"
+                ],
+                "line": 11
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 201235700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Login to application",
+            "match": {
+              "location": "AAddtoCart.login_to_application()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "",
+        "description": "",
+        "id": "add-to-cart;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6362981700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "rEMOve the product from the Cart",
+            "match": {
+              "location": "AAddtoCart.rEMove_the_product_from_the_Cart()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@Second"
+          }
+        ]
+      }
+    ],
+    "name": "Add to Cart",
+    "description": "",
+    "id": "add-to-cart",
+    "keyword": "Feature",
+    "uri": "./src/main/java/Feature/Login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@EndtoEndtesting"
+      }
+    ]
+  }
+]

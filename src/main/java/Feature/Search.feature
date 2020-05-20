@@ -2,7 +2,7 @@ Feature: Snapdeal Login Page
 
 Scenario: snapdeal login
 Given User enters website link
-When User enters credentials
+When Enter the username and Password
 |rajyalakshmi325@gmail.com|Raji@26|
 Then user name can be seen on the page
 Then user search for "Face mask"

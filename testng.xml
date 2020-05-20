@@ -3,9 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.capgemini.snapdeal.stepdefinition.LoginStepdefinition"/>
-      <class name="com.capgemini.snapdeal.runner.Runner"/>
-      <class name="com.capgemini.snapdeal.test.PropertiesFile"/>
+      <class name="com.capgemini.snapdeal.pageobject.SecurePaymentPage"/>
+      <class name="com.capgemini.snapdeal.runner.SecurePaymentRunner"/>
+     <class name="com.capgemini.snapdeal.stepdefinition.SecurePaymentStepDef"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

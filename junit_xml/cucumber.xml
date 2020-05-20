@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="67.233788">
+<testcase classname="Add to Cart" name="" time="40.591328">
+<system-out><![CDATA[Given User Opens chrome Browser.............................................passed
+When User enters the url....................................................passed
+Then User mouse hover Account...............................................passed
+When the User clicks on Sigin Button........................................passed
+Then Enter the Enter userName and j_password_login_uc.......................passed
+And Login to application....................................................passed
+Given MOve to the categories................................................passed
+Then user SElect The Product................................................passed
+When user CLicks On Product.................................................passed
+Then user wants to ADD the product to cart..................................passed
+And close THe BRowser.......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Add to Cart" name="" time="26.64246">
+<system-out><![CDATA[Given User Opens chrome Browser.............................................passed
+When User enters the url....................................................passed
+Then User mouse hover Account...............................................passed
+When the User clicks on Sigin Button........................................passed
+Then Enter the Enter userName and j_password_login_uc.......................passed
+And Login to application....................................................passed
+Given rEMOve the product from the Cart......................................passed
+]]></system-out>
+</testcase>
+</testsuite>
